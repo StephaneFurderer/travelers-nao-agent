@@ -3,10 +3,10 @@ project_name: travelers-insurance
 databases:
 - name: supabase-travelers
   type: postgres
-  host: db.hevfinkbgeapcpnlmvec.supabase.co
-  port: 6543
+  host: aws-1-us-east-2.pooler.supabase.com
+  port: 5432
   database: postgres
-  user: postgres
+  user: postgres.hevfinkbgeapcpnlmvec
   password: ${{ env('PG_PASS') }}
   schema_name: public
   accessors:
