@@ -4,7 +4,7 @@ databases:
 - name: supabase-travelers
   type: postgres
   host: db.hevfinkbgeapcpnlmvec.supabase.co
-  port: 5432
+  port: 6543
   database: postgres
   user: postgres
   password: ${{ env('PG_PASS') }}
