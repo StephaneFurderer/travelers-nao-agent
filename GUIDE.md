@@ -8,7 +8,7 @@
 
 ## What You're Looking At
 
-This is a travel insurance portfolio — 50,000 bookings, 73,000 policies, 5,300 claims — stored in a standard Postgres database. The kind of data that normally lives behind a dashboard.
+This is a travel insurance portfolio — 50,000 bookings, 73,000 policies — stored in a standard Postgres database. The kind of data that normally lives behind a dashboard.
 
 On top of it sits **Nao**, an open-source analytics agent. You type a question in plain English. Nao writes the SQL, runs it against your database, and gives you the answer. No tickets. No waiting. No translating what you need into someone else's language.
 
@@ -81,7 +81,7 @@ When you run `nao sync`, Nao connects to your database and auto-generates docume
 
 The auto-generated descriptions say "No description available" — so we enriched each one with 2-3 sentences of business context. For example, the claims table description now reads:
 
-> *"Insurance claim events linked to policies. ~7% of policies generate a claim. Claims are either pre_departure (cancellation) or post_departure (trip_delay or trip_interruption)."*
+> *"Insurance claim events linked to policies. x% of reported frequency. Claims are either pre_departure (cancellation) or post_departure (trip_delay or trip_interruption)."*
 
 This is the kind of institutional knowledge that usually lives in someone's head. Now it lives in a file the agent can read.
 
